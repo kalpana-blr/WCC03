@@ -1,0 +1,127 @@
+1. how to print reverse the array elements using for each loop.
+Index = arr.length -1?
+Answer - Cannot traverse in reverse order, only forward direction
+
+2. Methods - passing arguments
+if you are passing a smaller data compiler will perform auto widening and then it will pass the data
+What will happend bigger to small data? is it CTE , thats correct
+
+3. Methods - If you want to use it in another project, make it as a library.
+ how to make it as library? Asked and Sumanth said he will teach later
+
+4. Plus operator does two task - concatenate string and add numbers.
+Note: in java we don't have operator overloading like in Python
+   eg. 4+3 = 7 (addition),  "String" + "hello" = Stringhello (concatenate)
+
+
+ Note:  "string" + void = CTE ("string" + sum(1,3)) where sum retruns void) this is CTE
+
+
+5. continue statement when will be used?
+
+5Q. Will Class occupy memory? 
+1. Empty class , when no members available will be loaded and memory is allocated in the class static area
+2. non-static variables or methods, memory will be allocated only when the object is created/ referenced. both the static and non static members of the class are loaded 
+3. static variables or methods, memory will be allocated whenever we refer or access the member.  Only  the static members (both variables and methods) of the class are loaded
+note: method body will be loaded into method area while loading into class static area or heap area
+
+
+6. In Initializer block (static or non-static) 
+	what type of statements allowed?
+	can we have methods definition - No (I tried but get it confirmed)
+	class with in class allowed but how to access the members?
+
+7. non-static method can be accessed in the static context with object reference 
+but non-static variable cannot be access y?
+ //System.out.println(" print method, new B().a =  " + new B().a);	
+ //java:28: error: cannot find  - recheck this, I should not get an error
+
+
+//non-static members
+//==================
+//NSM of same class directly inside NSM
+//SM of same class by creating obj
+//NSM of diff class by creating obj
+//SM of diff class by creating obj
+
+//static memebers
+//================
+//NSM of same class  directly    ClassName    Obj
+//SM of same calss   directly    ClassName    Obj
+//NSM of diff class  ClassName   Obj
+//SM of diff class   ClassName   Obj
+
+Define constructor.
+a) Constructor is used to create an object.
+b) Constructor is used to load non-static members to an object.
+c) Constructor is a special non-static method which does not have a return type.
+d) Constructor is used to execute non-static initializers. 
+
+Life Cycle of constructor
+	//1. instruction for loading
+	//2. it will add all NSI (Non-Static Initialiser
+	//3. instructions which we have given inside the const
+
+
+8. Constructor has <access_Specifier>  if its private will it create? yes
+ note: Constructor is used to initialise the non-static members.
+
+9. Instance of a class? is nothing but object of a class
+- we are referring to the object ( new object is created )
+
+10. will complier not add default constructor even if we have user defined parameterised constructor?
+A. No, if there is no user defined constructors, then only the compiler add default no argument constructor.
+	
+note:  Instance of class = object of class
+
+11. static memebers belong to an instance (or object) of a class - wrong
+it belongs to class not object however static members can be accessed using o
+
+Class member - are only called for static members. Class member are also called class static areas
+Non-static members are called object members or instance member
+static members are called class members or class static area members
+
+JAVA versions and JDK SE (Standard edition)
+Java 1.3 Meaning its  JDK 3, upto JDK 10 they followed this versioning pattern
+Java 1.5 = JDK 5 
+
+
+Topics to cover
+- Non-Primitive type cast - done
+- Methods - If you want to use it in another project, make it as a library.
+- continue
+- Serialisation / de-serialisation
+- Data Structure- Wrapper classes
+- Garbage collector 
+- MultiThreading- enum
+- annotation
+- Constants is it final?
+- File handling
+- database connection
+- exception handling  - done
+- final - done 
+- throw, throws - done
+-implements - done
+-Super class - done
+garbage collector 
+override is different concept - done
+
+
+
+
+Can we overload the main() method in Java?
+*
+1 point
+Yes
+No
+
+answer is yes, but first executes the main (string[] args) methoda always
+ not any other method overloading executed. From main (string[] args)
+inside this we can call other main method overloading
+---------------------------------------------------------------
+
+
+
+
+
+
